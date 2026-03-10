@@ -1,0 +1,202 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Caleb Sobolewski</title>
+    <style>
+      @font-face {
+        font-family: "Geist";
+        src: url("node_modules/geist/dist/fonts/geist-sans/Geist-Variable.woff2")
+          format("woff2");
+        font-weight: 100 900;
+        font-style: normal;
+      }
+      *,
+      *::before,
+      *::after {
+        box-sizing: border-box;
+        margin: 0;
+        padding: 0;
+      }
+
+      body {
+        font-family: "Geist", sans-serif;
+        background: #fff;
+        color: #111;
+        min-height: 100vh;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding: 48px 24px;
+      }
+
+      main {
+        max-width: 480px;
+        width: 100%;
+      }
+
+      .eyebrow {
+        font-size: 11px;
+        font-weight: 400;
+        letter-spacing: 0.1em;
+        text-transform: uppercase;
+        color: #999;
+        margin-bottom: 20px;
+      }
+
+      h1 {
+        font-size: 28px;
+        font-weight: 500;
+        line-height: 1.2;
+        margin-bottom: 6px;
+      }
+
+      .title {
+        font-size: 15px;
+        font-weight: 400;
+        color: #555;
+        margin-bottom: 12px;
+      }
+
+      .blurb {
+        font-size: 14px;
+        font-weight: 300;
+        color: #777;
+        line-height: 1.6;
+        margin-bottom: 36px;
+      }
+
+      .divider {
+        border: none;
+        border-top: 1px solid #e5e5e5;
+        margin-bottom: 28px;
+      }
+
+      .contact {
+        display: flex;
+        flex-direction: column;
+        gap: 12px;
+      }
+
+      .contact-item {
+        display: flex;
+        align-items: center;
+        gap: 12px;
+        font-size: 14px;
+      }
+
+      .contact-label {
+        font-size: 11px;
+        font-weight: 400;
+        letter-spacing: 0.08em;
+        text-transform: uppercase;
+        color: #bbb;
+        width: 60px;
+        flex-shrink: 0;
+      }
+
+      a {
+        color: #111;
+        text-decoration: none;
+      }
+
+      a:hover {
+        text-decoration: underline;
+      }
+
+      button.email-btn {
+        background: none;
+        border: none;
+        cursor: pointer;
+        font-size: 14px;
+        color: #111;
+        padding: 0;
+      }
+
+      button.email-btn:hover {
+        text-decoration: underline;
+      }
+
+      .copy-hint {
+        font-size: 11px;
+        color: #bbb;
+        margin-left: 2px;
+      }
+
+      .resume-btn {
+        display: inline-block;
+        margin-top: 28px;
+        padding: 8px 16px;
+        border: 1px solid #111;
+        font-size: 12px;
+        font-weight: 400;
+        letter-spacing: 0.06em;
+        text-transform: uppercase;
+        color: #111;
+        text-decoration: none;
+        transition:
+          background 0.15s,
+          color 0.15s;
+      }
+
+      .resume-btn:hover {
+        background: #111;
+        color: #fff;
+        text-decoration: none;
+      }
+    </style>
+  </head>
+  <body>
+    <main>
+      <p class="eyebrow">Portfolio — coming soon</p>
+      <h1>Caleb Sobolewski</h1>
+      <p class="title">Designer &middot; Photographer &middot; Art Director</p>
+      <p class="blurb">
+        Student creative leader with a background in graphic design,
+        photography, and brand strategy. B.S. Social Media Design Management,
+        Northern Michigan University, est. grad Spring 2026.
+      </p>
+
+      <hr class="divider" />
+
+      <div class="contact">
+        <div class="contact-item">
+          <span class="contact-label">Email</span>
+          <button class="email-btn" onclick="copyEmail(this)">
+            hello@calebsobo.com
+          </button>
+          <span class="copy-hint" id="copy-hint"></span>
+        </div>
+        <div class="contact-item">
+          <span class="contact-label">LinkedIn</span>
+          <a
+            href="https://linkedin.com/in/calebsobo"
+            target="_blank"
+            rel="noopener"
+            >linkedin.com/in/calebsobo</a
+          >
+        </div>
+      </div>
+
+      <a
+        class="resume-btn"
+        href="https://portfolio.calebsobo.com/Caleb%20Sobolewski%20-%20Resume.pdf"
+        target="_blank"
+        >Resume &rarr;</a
+      >
+    </main>
+
+    <script>
+      function copyEmail() {
+        navigator.clipboard.writeText("hello@calebsobo.com").then(function () {
+          const hint = document.getElementById("copy-hint");
+          hint.textContent = "copied";
+          setTimeout(function () {
+            hint.textContent = "";
+          }, 2000);
+        });
+      }
+    </script>
+  </body>
+</html>
