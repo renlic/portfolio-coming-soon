@@ -6,6 +6,11 @@
     <meta name="description" content="Portfolio of Caleb Sobolewski — Designer, Photographer, and Art Director." />
     <link rel="icon" href="https://fav.farm/🖥" />
     <title>Caleb Sobolewski — Portfolio</title>
+    <!-- Preload font to reduce FOUT -->
+    <link rel="preload" href="https://cdn.jsdelivr.net/npm/geist/dist/fonts/geist-sans/Geist-Variable.woff2" as="font" type="font/woff2" crossorigin />
+    <!-- DNS prefetch for domains hit on lightbox open -->
+    <link rel="dns-prefetch" href="https://portfolio.calebsobo.com" />
+    <link rel="dns-prefetch" href="https://raw.githubusercontent.com" />
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/glightbox/dist/css/glightbox.min.css" />
     <link rel="stylesheet" href="style.css" />
   </head>
@@ -34,65 +39,56 @@
 
         <div class="video-grid">
 
-          <!-- Row 1 -->
+          <!-- Row 1: Severance (link-out, copyright blocked) -->
           <div class="video-row">
             <div class="text-card">
-              <h3 class="project-title">&ldquo;I am a person. You are not.&rdquo; &dash; Severance Visual Match</h3>
+              <h3 class="project-title">&ldquo;I am a person. You are not.&rdquo; &ndash; Severance Visual Match</h3>
               <p class="project-desc">For this project, I directed and produced a frame-accurate recreation of a scene from Apple TV+&rsquo;s Severance. We ran it like a real film set: call sheets, dailies, costume construction, and casting across both the general student body and NMU&rsquo;s School of Theatre and Dance. The goal was a serious study of cinematic craft through reproduction, to understand the full breadth of effort that goes into high-level production. I handled all editing and visual effects in post. Getting the lighting, blocking, and performance to match the original required deep pre-production and sharp attention to detail at every stage.</p>
             </div>
             <div class="video-thumb-wrap">
               <a href="https://www.youtube.com/watch?v=ej6waBV_434" class="video-thumb" target="_blank" rel="noopener" aria-label="Watch on YouTube">
                 <img loading="lazy" decoding="async" src="images/thumb/vi/ej6waBV_434/maxresdefault.jpg" alt="I am a person. You are not. — Severance Visual Match" />
-</a>
-              <p class="video-ext-caption">Opens in a new tab &dash; embedding restricted due to a copyright claim on the source material.</p>
+              </a>
+              <p class="video-ext-caption">Opens in a new tab &ndash; embedding restricted due to a copyright claim on the source material.</p>
             </div>
           </div>
 
-          <!-- Row 2 -->
+          <!-- Row 2: Emily's 21st -->
           <div class="video-row">
             <div class="text-card">
-              <h3 class="project-title">Emily&rsquo;s 21st &dash; Documentary</h3>
+              <h3 class="project-title">Emily&rsquo;s 21st &ndash; Documentary</h3>
               <p class="project-desc">A short &ldquo;backyard documentary&rdquo; about my friend Emily&rsquo;s 21st birthday. This project sits in the modes of celebration and the bittersweet. I interviewed my friend and also captured footage of her birthday night celebration, then layered additional sound elements in post to create tension and depth between image and audio. The film explores the weight of a milestone that rarely feels the way you expect it to.<br><br>This piece was nominated into NMU&rsquo;s yearly student film festival.</p>
             </div>
             <div class="video-embed">
-              <iframe
-                src="https://www.youtube.com/embed/HCdTkgRMotY"
-                title="Emily's 21st — AD312 Documentary"
-                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                allowfullscreen
-              ></iframe>
+              <div class="yt-facade" data-id="HCdTkgRMotY">
+                <img loading="lazy" decoding="async" src="images/thumb/yt/HCdTkgRMotY.jpg" alt="Emily's 21st — Documentary" />
+              </div>
             </div>
           </div>
 
-          <!-- Row 3 -->
+          <!-- Row 3: Atomos Ninja Inferno -->
           <div class="video-row">
             <div class="text-card">
-              <h3 class="project-title">Atomos Ninja Inferno Tutorial &dash;  Tutorial</h3>
+              <h3 class="project-title">Atomos Ninja Inferno &ndash; Tutorial</h3>
               <p class="project-desc">The original assignment asked for a 3&ndash;5 minute equipment tutorial. I went well beyond that and produced a full in-depth walkthrough of the Atomos Ninja Inferno, a professional external monitor and recorder used on film sets. As a kid I wanted to be a technology YouTuber, so I treated this like the real thing: scripted, well-paced, with on-camera demonstrations, and real test footage showing what the gear can do. It now serves as the official tutorial resource for NMU students who want to check out and use this piece of equipment.</p>
             </div>
             <div class="video-embed">
-              <iframe
-                src="https://www.youtube.com/embed/cq9P5K7PUtE"
-                title="Atomos Ninja Inferno Tutorial — AD312 Tutorial"
-                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                allowfullscreen
-              ></iframe>
+              <div class="yt-facade" data-id="cq9P5K7PUtE">
+                <img loading="lazy" decoding="async" src="images/thumb/yt/cq9P5K7PUtE.jpg" alt="Atomos Ninja Inferno — Tutorial" />
+              </div>
             </div>
           </div>
 
-          <!-- Row 4 -->
+          <!-- Row 4: Please Do Not Touch -->
           <div class="video-row">
             <div class="text-card">
-              <h3 class="project-title">Please Do Not Touch &dash; Directing Dialogue</h3>
+              <h3 class="project-title">Please Do Not Touch &ndash; Directing Dialogue</h3>
               <p class="project-desc">From my introductory cinema course, this short was built around a script handed to every student in the class. The challenge was to construct a complete story and visual world around the same given lines, making directorial decisions that could set your interpretation apart from everyone else&rsquo;s. I filmed two other students in the course as my actors. It was one of my first real experiences turning a constraint into a creative framework and taught me that the story can be so much more than what&rsquo;s in the script itself.</p>
             </div>
             <div class="video-embed">
-              <iframe
-                src="https://www.youtube.com/embed/y738RjWyMD0"
-                title="Please Do Not Touch — Directing Dialogue Project"
-                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                allowfullscreen
-              ></iframe>
+              <div class="yt-facade" data-id="y738RjWyMD0">
+                <img loading="lazy" decoding="async" src="images/thumb/yt/y738RjWyMD0.jpg" alt="Please Do Not Touch — Directing Dialogue" />
+              </div>
             </div>
           </div>
 
@@ -131,12 +127,9 @@
                 <img loading="lazy" decoding="async" src="images/thumb/ad488/3-rollout/14.jpg" alt="KYAA campaign asset" />
               </a>
               <div class="graphics-embed">
-                <iframe
-                  src="https://www.youtube.com/embed/cFckgRcQRvU"
-                  title="KYAA — Educational Access Series"
-                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                  allowfullscreen
-                ></iframe>
+                <div class="yt-facade" data-id="cFckgRcQRvU">
+                  <img loading="lazy" decoding="async" src="images/thumb/yt/cFckgRcQRvU.jpg" alt="KYAA — Educational Access Series" />
+                </div>
               </div>
             </div>
           </div>
@@ -341,6 +334,16 @@
 
     <script src="https://cdn.jsdelivr.net/npm/glightbox/dist/js/glightbox.min.js"></script>
     <script>
+      document.querySelectorAll('.yt-facade').forEach(function(el) {
+        el.addEventListener('click', function() {
+          var iframe = document.createElement('iframe');
+          iframe.src = 'https://www.youtube.com/embed/' + el.dataset.id + '?autoplay=1';
+          iframe.title = el.querySelector('img').alt;
+          iframe.allow = 'accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture';
+          iframe.allowFullscreen = true;
+          el.replaceWith(iframe);
+        });
+      });
       GLightbox({ touchNavigation: true, loop: true, autoplayVideos: false });
     </script>
 
